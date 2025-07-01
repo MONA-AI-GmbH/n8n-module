@@ -1,19 +1,19 @@
 {
-  "name": "n8n-nodes-<...>",
+  "name": "n8n-nodes-testnode",
   "version": "0.1.0",
-  "description": "",
+  "description": "n8n nodes for using Mona AI's API",
   "keywords": [
     "n8n-community-node-package"
   ],
   "license": "MIT",
   "homepage": "",
   "author": {
-    "name": "",
-    "email": ""
+    "name": "Mona AI GmbH",
+    "email": "support@mona-ai.de"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/<...>/n8n-nodes-<...>.git"
+    "url": "https://github.com/MONA-AI-GmbH/n8n-module.git"
   },
   "engines": {
     "node": ">=20.15"
@@ -33,12 +33,27 @@
   "n8n": {
     "n8nNodesApiVersion": 1,
     "credentials": [
-      "dist/credentials/ExampleCredentialsApi.credentials.js",
-      "dist/credentials/HttpBinApi.credentials.js"
+      "dist/credentials/UserIdApi.credentials.js",
+      "dist/credentials/MonaApi.credentials.js"
     ],
     "nodes": [
-      "dist/nodes/ExampleNode/ExampleNode.node.js",
-      "dist/nodes/HttpBin/HttpBin.node.js"
+      "dist/nodes/agents/GetAgentsResponse.node.js",
+      "dist/nodes/api/GenerateApiKeyNode.node.js",
+      "dist/nodes/database/GetAgentsFromDatabase/GetAgentsFromDatabase.node.js",
+      "dist/nodes/database//GetApplicantsFromDatabase/GetApplicantsFromDatabase.node.js",
+      "dist/nodes/database/GetApplicantsFromDatabaseForPlatform/GetApplicantsFromDatabaseForPlatform.node.js",
+      "dist/nodes/database/GetFinishedApplicantsFromDatabase/GetFinishedApplicantsFromDatabase.node.js",
+      "dist/nodes/database/GetJobOffersFromDatabase/GetJobOffersFromDatabase.node.js",
+      "dist/nodes/database/GetMatchesFromDatabaseForPlatform/GetMatchesFromDatabaseForPlatform.node.js",
+      "dist/nodes/database/GetMatchingResults/GetMatchingResults.node.js",
+      "dist/nodes/database/GetSalesCorrespondenceFromDatabase/GetSalesCorrespondenceFromDatabase.node.js",
+      "dist/nodes/database/GetToolsFromAgent/GetToolsFromAgent.node.js",
+      "dist/nodes/database/PushApplicantsToDatabase/PushApplicantsToDatabase.node.js",
+      "dist/nodes/database/PushJobOffersToDatabase/PushJobOffersToDatabase.node.js",
+      "dist/nodes/matching/GetProfilesSent/GetProfilesSent.node.js",
+      "dist/nodes/matching/GetProfilesSentByApplicantId/GetProfilesSentByApplicantId.node.js",
+      "dist/nodes/parsing/ParseCv/ParseCv.node.js",
+      "dist/nodes/parsing/AnyDocumentToText/AnyDocumentToText.node.js"
     ]
   },
   "devDependencies": {
