@@ -7,7 +7,7 @@ export class GetMatchesFromDatabaseForPlatform implements INodeType {
         icon: 'file:../../mona-logo.svg',
         group: ['transform'],
         version: 1,
-								subtitle: '={{ $parameter["operation"] + ": " + $parameter["resource"] }}',
+		subtitle: '={{ $parameter["operation"] + ": " + $parameter["resource"] }}',
         description: 'Fetch the last matching results, containing the information that you can see in the MONA platform. (without using API key)',
         defaults: {
             name: 'Get Matches From Database For MONA Platform',
