@@ -7,7 +7,7 @@ export class GetJobOffersFromDatabase implements INodeType {
         icon: 'file:../../mona-logo.svg',
         group: ['transform'],
         version: 1,
-								subtitle: '={{ $parameter["operation"] + ": " + $parameter["resource"] }}',
+		subtitle: '={{ $parameter["operation"] + ": " + $parameter["resource"] }}',
         description: 'Get the job offers from the database.',
         defaults: {
             name: 'Get Job Offers From Database',

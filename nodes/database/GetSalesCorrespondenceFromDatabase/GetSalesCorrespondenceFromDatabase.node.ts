@@ -7,7 +7,7 @@ export class GetSalesCorrespondenceFromDatabase implements INodeType {
         icon: 'file:../../mona-logo.svg',
         group: ['trigger'],
         version: 1,
-								subtitle: '={{ $parameter["operation"] + ": " + $parameter["resource"] }}',
+		subtitle: '={{ $parameter["operation"] + ": " + $parameter["resource"] }}',
         description: 'Fetch the sales correspondence from the database. (without using API key)',
         defaults: {
             name: 'Get Sales Correspondence From Database',

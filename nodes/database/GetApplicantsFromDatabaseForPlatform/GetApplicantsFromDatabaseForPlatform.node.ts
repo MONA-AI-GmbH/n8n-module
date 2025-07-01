@@ -7,7 +7,7 @@ export class GetApplicantsFromDatabaseForPlatform implements INodeType {
         icon: 'file:../../mona-logo.svg',
         group: ['transform'],
         version: 1,
-								subtitle: '={{ $parameter["operation"] + ": " + $parameter["resource"] }}',
+		subtitle: '={{ $parameter["operation"] + ": " + $parameter["resource"] }}',
         description: 'Get the applicants from the database of MONA platform.',
         defaults: {
             name: 'Get Applicants From Database For MONA Platform',

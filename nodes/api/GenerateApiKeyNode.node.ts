@@ -7,7 +7,7 @@ export class GenerateApiKeyNode implements INodeType {
         icon: 'file:../mona-logo.svg',
         group: ['transform'],
         version: 1,
-								subtitle: '={{ $parameter["operation"] + ": " + $parameter["resource"] }}',
+		subtitle: '={{ $parameter["operation"] + ": " + $parameter["resource"] }}',
         description: 'Generates a new API key for the authenticated user',
         defaults: {
             name: 'Generate API Key Node',

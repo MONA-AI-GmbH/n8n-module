@@ -7,7 +7,7 @@ export class GetFinishedApplicantsFromDatabase implements INodeType {
         icon: 'file:../../mona-logo.svg',
         group: ['transform'],
         version: 1,
-								subtitle: '={{ $parameter["operation"] + ": " + $parameter["resource"] }}',
+		subtitle: '={{ $parameter["operation"] + ": " + $parameter["resource"] }}',
         description: 'Get the finished applicants from the database who has finished the interview process.',
         defaults: {
             name: 'Get Finished Applicants From Database',
