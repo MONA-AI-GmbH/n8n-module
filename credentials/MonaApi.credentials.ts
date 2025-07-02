@@ -1,5 +1,6 @@
 import {
     IAuthenticateGeneric,
+	ICredentialTestRequest,
     ICredentialType,
     INodeProperties,
 } from 'n8n-workflow';
@@ -36,6 +37,16 @@ export class MonaApi implements ICredentialType {
                 apiKey: '={{$credentials.apiKey}}',
             },
         },
-
-    }
+    };
+    
+    test: ICredentialTestRequest = {
+        request: {
+            baseURL: 'https://api.mona-ai.cloud/auth/checkIfAPIKeyIsValid',
+            method: 'POST',
+            body: {
+                    uid: '={{$credentials.uid}}',
+                    apiKey: '={{$credentials.apiKey}}',
+            },
+        },
+    };
 }

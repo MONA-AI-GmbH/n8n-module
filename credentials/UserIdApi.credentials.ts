@@ -2,6 +2,7 @@ import {
     IAuthenticateGeneric,
     ICredentialType,
     INodeProperties,
+	ICredentialTestRequest,
 } from 'n8n-workflow';
 
 
@@ -25,6 +26,30 @@ export class UserIdApi implements ICredentialType {
                 uid: '={{$credentials.uid}}',
             },
         },
-
     }
+
+    test: ICredentialTestRequest = {
+        request: {
+            baseURL: 'https://api.mona-ai.cloud/auth/generateApiKey',
+            method: 'POST',
+            body: {
+                uid: '={{$credentials.uid}}',
+                "readApplicants": false,
+                "pushApplicants": false,
+                "readJobOffers": false,
+                "pushJobOffers": false,
+                "readAgents": false,
+                "pushAgents": false,
+                "readData": false,
+                "pushData": false,
+                "executeAgents": false,
+                "executeWorkflow": false,
+                "readTools": false,
+                "manageTools": false,
+                "readMatching": false,
+                "createMatching": false,
+                "parsing": false
+            }
+        }
+    };
 }
