@@ -77,7 +77,7 @@ The package includes 11 database nodes for comprehensive data management:
 
 #### Data Retrieval Nodes
 - **Get Agents From Database**: Retrieve agent configurations
-- **Get Applicants From Database**: Fetch applicant records
+- **Get Applicants From Database**: Fetch applicant records from the applicants collection
 - **Get Applicants From Database For Platform**: Platform-specific applicant data
 - **Get Finished Applicants From Database**: Completed applicant profiles
 - **Get Job Offers From Database**: Retrieve job postings
@@ -87,7 +87,7 @@ The package includes 11 database nodes for comprehensive data management:
 - **Get Tools From Agent**: Agent-specific tool configurations
 
 #### Data Management Nodes
-- **Push Applicants To Database**: Add new applicant records
+- **Push Applicants To Database**: Add new applicant records to emailapplicants collection
 - **Push Job Offers To Database**: Create new job postings
 
 ### Matching Nodes

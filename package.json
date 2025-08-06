@@ -37,23 +37,7 @@
       "dist/credentials/MonaApi.credentials.js"
     ],
     "nodes": [
-      "dist/nodes/agents/GetAgentsResponse.node.js",
-      "dist/nodes/api/GenerateApiKeyNode.node.js",
-      "dist/nodes/database/GetAgentsFromDatabase/GetAgentsFromDatabase.node.js",
-      "dist/nodes/database//GetApplicantsFromDatabase/GetApplicantsFromDatabase.node.js",
-      "dist/nodes/database/GetApplicantsFromDatabaseForPlatform/GetApplicantsFromDatabaseForPlatform.node.js",
-      "dist/nodes/database/GetFinishedApplicantsFromDatabase/GetFinishedApplicantsFromDatabase.node.js",
-      "dist/nodes/database/GetJobOffersFromDatabase/GetJobOffersFromDatabase.node.js",
-      "dist/nodes/database/GetMatchesFromDatabaseForPlatform/GetMatchesFromDatabaseForPlatform.node.js",
-      "dist/nodes/database/GetMatchingResults/GetMatchingResults.node.js",
-      "dist/nodes/database/GetSalesCorrespondenceFromDatabase/GetSalesCorrespondenceFromDatabase.node.js",
-      "dist/nodes/database/GetToolsFromAgent/GetToolsFromAgent.node.js",
-      "dist/nodes/database/PushApplicantsToDatabase/PushApplicantsToDatabase.node.js",
-      "dist/nodes/database/PushJobOffersToDatabase/PushJobOffersToDatabase.node.js",
-      "dist/nodes/matching/GetProfilesSent/GetProfilesSent.node.js",
-      "dist/nodes/matching/GetProfilesSentByApplicantId/GetProfilesSentByApplicantId.node.js",
-      "dist/nodes/parsing/ParseCv/ParseCv.node.js",
-      "dist/nodes/parsing/AnyDocumentToText/AnyDocumentToText.node.js"
+      "dist/nodes/MONA-API/api.node.js"
     ]
   },
   "devDependencies": {
