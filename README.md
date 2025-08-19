@@ -7,7 +7,7 @@ This package provides n8n community nodes for integrating with Mona AI's service
 To install this community node package in n8n:
 
 ```bash
-npm install n8n-nodes-testnode
+npm install n8n-nodes-mona-ai
 ```
 
 After installation, restart your n8n instance. The Mona AI nodes will be available in the n8n node palette.
@@ -187,4 +187,4 @@ This package is maintained by Mona AI GmbH. For contributions or issues, please 
 
 **Repository**: [MONA-AI-GmbH/n8n-module](https://github.com/MONA-AI-GmbH/n8n-module)  
 **Author**: Mona AI GmbH  
-**Version**: 0.1.0
+**Version**: 0.1.5
